@@ -51,7 +51,7 @@ export default function RootLayout({
         <meta name="geo.placename" content="Rajkot, Gujarat" />
         <meta name="geo.position" content="22.3039;70.8022" />
         <meta name="ICBM" content="22.3039, 70.8022" />
-        <link rel="icon" href="/PlumbingProject/icons/icon2.png" type="image/png" />
+        <link rel="icon" href="/icons/icon2.png" type="image/png" />
       </head>
       <body className={inter.className}>
         <ThemeProvider

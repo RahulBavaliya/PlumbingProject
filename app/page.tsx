@@ -10,7 +10,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[600px]">
         <Image
-          src="/PlumbingProject/icons/icon5.jpeg"
+          src="/icons/icon5.jpeg"
           alt="Professional plumbing services"
           fill
           className="object-cover brightness-50"
