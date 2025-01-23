@@ -29,6 +29,7 @@ export default function Navigation() {
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <Link href="/services">Services</Link>
+            <Link href="/gallery">Gallery</Link>
             <Link href="/reviews">Reviews</Link>
             <Link href="/contact">Contact</Link>
           </nav>
@@ -50,6 +51,9 @@ export default function Navigation() {
               </Link>
               <Link href="/services" onClick={() => setIsOpen(false)}>
                 Services
+              </Link>
+              <Link href="/gallery" onClick={() => setIsOpen(false)}>
+                Gallery
               </Link>
               <Link href="/reviews" onClick={() => setIsOpen(false)}>
                 Reviews

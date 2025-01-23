@@ -5,7 +5,6 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
-  assetPrefix: '/PlumbingProject',
 };
 
 module.exports = nextConfig;
