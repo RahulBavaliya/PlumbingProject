@@ -25,7 +25,7 @@ export default function Home() {
                 <Link href="/book">Book Now</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link href="tel:+919876543210">
+                <Link href="tel:+917046204690">
                   <PhoneCall className="mr-2 h-4 w-4" />
                   Emergency Call
                 </Link>

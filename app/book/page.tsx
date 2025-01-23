@@ -46,8 +46,8 @@ export default function BookPage() {
                 <PhoneCall className="h-5 w-5 text-primary" />
                 <div>
                   <p className="font-medium">Emergency Contact</p>
-                  <a href="tel:+919876543210" className="text-primary hover:underline">
-                    +91 98765 43210
+                  <a href="tel:+917046204690" className="text-primary hover:underline">
+                    +91 70462 04690
                   </a>
                 </div>
               </div>
@@ -55,8 +55,8 @@ export default function BookPage() {
                 <Mail className="h-5 w-5 text-primary" />
                 <div>
                   <p className="font-medium">Email</p>
-                  <a href="mailto:contact@rajkotplumbing.com" className="text-primary hover:underline">
-                    contact@rajkotplumbing.com
+                  <a href="mailto:rsbavaliya330@gmail.com" className="text-primary hover:underline">
+                    rsbavaliya330@gmail.com
                   </a>
                 </div>
               </div>

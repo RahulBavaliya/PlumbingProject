@@ -52,19 +52,19 @@ export default function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <a href="tel:+919876543210" className="hover:text-primary">
-                  +91 98765 43210
+                <a href="tel:+917046204690" className="hover:text-primary">
+                  +91 70462 04690
                 </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <a href="mailto:contact@rajkotplumbing.com" className="hover:text-primary">
-                  contact@rajkotplumbing.com
+                <a href="mailto:rsbavaliya330@gmail.com" className="hover:text-primary">
+                  rsbavaliya330@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                <span>123 Plumbing Street, Rajkot</span>
+                <span>Yashvi plumber, Near Dholakiya school, Balaji hall, Rajkot</span>
               </li>
             </ul>
           </div>
@@ -74,7 +74,7 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
             <div className="flex gap-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/1EXw6RvZfv/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
@@ -82,7 +82,7 @@ export default function Footer() {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/rsbavaliya330"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
@@ -90,7 +90,7 @@ export default function Footer() {
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/rahul__1204/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"
