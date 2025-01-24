@@ -9,9 +9,14 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { useState } from "react";
+import { CustomizationMenu } from "./customization-menu";
+import { useCustomization } from "@/lib/hooks/useCustomization";
+import { translations } from "@/lib/i18n/translations";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const { language } = useCustomization();
+  const t = translations[language].common;
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -28,10 +33,10 @@ export default function Navigation() {
             </span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
-            <Link href="/services">Services</Link>
-            <Link href="/gallery">Gallery</Link>
-            <Link href="/reviews">Reviews</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href="/services">{t.services}</Link>
+            <Link href="/gallery">{t.gallery}</Link>
+            <Link href="/reviews">{t.reviews}</Link>
+            <Link href="/contact">{t.contact}</Link>
           </nav>
         </div>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -47,26 +52,27 @@ export default function Navigation() {
           <SheetContent side="left" className="pr-0">
             <nav className="flex flex-col space-y-4">
               <Link href="/" onClick={() => setIsOpen(false)}>
-                Home
+                {t.home}
               </Link>
               <Link href="/services" onClick={() => setIsOpen(false)}>
-                Services
+                {t.services}
               </Link>
               <Link href="/gallery" onClick={() => setIsOpen(false)}>
-                Gallery
+                {t.gallery}
               </Link>
               <Link href="/reviews" onClick={() => setIsOpen(false)}>
-                Reviews
+                {t.reviews}
               </Link>
               <Link href="/contact" onClick={() => setIsOpen(false)}>
-                Contact
+                {t.contact}
               </Link>
             </nav>
           </SheetContent>
         </Sheet>
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+          <CustomizationMenu />
           <Button asChild>
-            <Link href="/book">Book Now</Link>
+            <Link href="/book">{t.bookNow}</Link>
           </Button>
         </div>
       </div>

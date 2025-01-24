@@ -1,7 +1,15 @@
+"use client";
+
 import Link from "next/link";
 import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { useCustomization } from "@/lib/hooks/useCustomization";
+import { translations } from "@/lib/i18n/translations";
 
 export default function Footer() {
+  const { language } = useCustomization();
+  const t = translations[language].footer;
+  const common = translations[language].common;
+
   return (
     <footer className="flex justify-center bg-background border-t">
       <div className="container max-w-7xl py-12">
@@ -16,31 +24,31 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-lg mb-4">{t.quickLinks}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-muted-foreground hover:text-primary">
-                  Home
+                  {common.home}
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="text-muted-foreground hover:text-primary">
-                  Services
+                  {common.services}
                 </Link>
               </li>
               <li>
                 <Link href="/gallery" className="text-muted-foreground hover:text-primary">
-                  Gallery
+                  {common.gallery}
                 </Link>
               </li>
               <li>
                 <Link href="/reviews" className="text-muted-foreground hover:text-primary">
-                  Reviews
+                  {common.reviews}
                 </Link>
               </li>
               <li>
                 <Link href="/book" className="text-muted-foreground hover:text-primary">
-                  Book Now
+                  {common.bookNow}
                 </Link>
               </li>
             </ul>
@@ -48,7 +56,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
+            <h3 className="font-semibold text-lg mb-4">{t.contactUs}</h3>
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
@@ -71,7 +79,7 @@ export default function Footer() {
 
           {/* Social Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
+            <h3 className="font-semibold text-lg mb-4">{t.followUs}</h3>
             <div className="flex gap-4">
               <a
                 href="https://www.facebook.com/share/1EXw6RvZfv/"
@@ -102,7 +110,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t text-center text-muted-foreground">
-          <p>© 2025 Rajkot Plumbing Services. All rights reserved.</p>
+          <p>{t.rights}</p>
         </div>
       </div>
     </footer>
