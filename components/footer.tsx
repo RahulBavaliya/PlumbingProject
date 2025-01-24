@@ -47,8 +47,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/book" className="text-muted-foreground hover:text-primary">
-                  {common.bookNow}
+                <Link href="/contact" className="text-muted-foreground hover:text-primary">
+                  {common.contact}
                 </Link>
               </li>
             </ul>

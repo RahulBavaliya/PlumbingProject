@@ -3,4 +3,4 @@ module.exports = {
     generateRobotsTxt: true, // Optional: Generate a robots.txt file
     outDir: './out',  // Ensure it generates in the 'out' directory after export
     sitemapSize: 7000, // Optional: control the number of URLs per sitemap file
-  };
+  };np
