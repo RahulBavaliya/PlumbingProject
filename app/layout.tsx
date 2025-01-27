@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import Navigation from '@/components/navigation';
 import Footer from '@/components/footer';
 import { CustomizationProvider } from '@/components/customization-provider';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -71,6 +72,7 @@ export default function RootLayout({
             <Toaster />
           </ThemeProvider>
         </CustomizationProvider>
+        <GoogleAnalytics gaId=" G-Y13740MGLH" />
       </body>
     </html>
   );
