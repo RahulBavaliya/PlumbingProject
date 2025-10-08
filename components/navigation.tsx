@@ -25,6 +25,11 @@ export default function Navigation() {
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <img
+              src={icon2.src}
+              alt="Rajkot Plumbing"
+              className="h-14 w-auto object-contain"
+            />
+             <img
               href={icon2.src}
               alt="Rajkot Plumbing"
               className="h-14 w-auto object-contain"
