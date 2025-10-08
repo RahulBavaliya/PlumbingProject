@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { WrenchIcon, PhoneCall, Clock, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import icon5 from '../public/icons/icon5.jpeg';
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[600px]">
         <Image
-          src="/icons/icon5.jpeg"
+          src={icon5.src}
           alt="Professional plumbing services"
           fill
           className="object-cover brightness-50"
