@@ -1,13 +1,14 @@
 /** @type {import('next').NextConfig} */
-const isVercel = !!process.env.VERCEL;
+const isVercel = process.env.VERCEL === '1'; // true when on Vercel
+const isGitHubPages = process.env.GITHUB_PAGES === 'true'; // we’ll set this in the GitHub workflow
+const repoName = 'PlumbingProject';
+
 const nextConfig = {
   output: 'export',
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  eslint: { ignoreDuringBuilds: true },
   images: { unoptimized: true },
-  basePath: isVercel ? '' : '/PlumbingProject',
-  assetPrefix: isVercel ? '' : '/PlumbingProject/',
+  basePath: isVercel ? '' : `/${repoName}`,
+  assetPrefix: isVercel ? '' : `/${repoName}/`,
   trailingSlash: true,
 };
 
