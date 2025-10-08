@@ -29,11 +29,6 @@ export default function Navigation() {
               alt="Rajkot Plumbing"
               className="h-14 w-auto object-contain"
             />
-             <img
-              href={icon2.src}
-              alt="Rajkot Plumbing"
-              className="h-14 w-auto object-contain"
-            />
             <span className="hidden font-bold sm:inline-block">
               Rajkot Plumbing
             </span>
