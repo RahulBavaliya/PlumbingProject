@@ -12,6 +12,7 @@ import { useState } from "react";
 import { CustomizationMenu } from "./customization-menu";
 import { useCustomization } from "@/lib/hooks/useCustomization";
 import { translations } from "@/lib/i18n/translations";
+import icon2 from '../public/icons/icon2.png';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ export default function Navigation() {
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <img
-              src="/icons/icon2.png" 
+              href={icon2.src}
               alt="Rajkot Plumbing"
               className="h-14 w-auto object-contain"
             />
