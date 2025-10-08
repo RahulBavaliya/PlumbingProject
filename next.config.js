@@ -5,7 +5,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
-  basePath: process.env.VERCEL ? '/' : '/PlumbingProject',
+  basePath: process.env.VERCEL ? '/' : '/PlumbingProject/',
   assetPrefix: process.env.VERCEL ? '/' : '/PlumbingProject/',
   trailingSlash: true,
 };
