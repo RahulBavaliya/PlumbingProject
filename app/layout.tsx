@@ -7,6 +7,7 @@ import Navigation from '@/components/navigation';
 import Footer from '@/components/footer';
 import { CustomizationProvider } from '@/components/customization-provider';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import icon2 from '../public/icons/icon2.png';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -54,7 +55,7 @@ export default function RootLayout({
         <meta name="geo.placename" content="Rajkot, Gujarat" />
         <meta name="geo.position" content="22.3039;70.8022" />
         <meta name="ICBM" content="22.3039, 70.8022" />
-        <link rel="icon" href="/icons/icon2.png" type="image/png" />
+        <link rel="icon" href={icon2.src} type="image/png" />
       </head>
       <body className={inter.className}>
         <CustomizationProvider>
